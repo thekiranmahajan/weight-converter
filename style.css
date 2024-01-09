@@ -25,7 +25,6 @@ body {
   background-color: rgba(255, 255, 255, 0.318);
   color: rgba(46, 38, 98, 0.853);
   backdrop-filter: blur(5px);
-
 }
 .heading {
   text-align: center;
@@ -47,8 +46,20 @@ body {
   box-shadow: inset 4px 4px 15px rgba(255, 255, 255, 0.282);
   background-color: transparent;
   padding: 10px 30px;
-  color: white;
-  }
+  color: rgb(69, 62, 62);
+  font-size: large;
+  user-select: rgb(255, 0, 13);
+}
+input::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(10, 10, 10);
+  background: yellow;
+}
+
+input::selection {
+  color: rgb(4, 4, 4);
+  background: yellow;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -58,6 +69,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-.conversion{
-    margin-top: 50px;
+.conversion {
+  margin-top: 50px;
+  width: 100%;
+  text-align: 100%;
 }
